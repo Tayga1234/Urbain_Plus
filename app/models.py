@@ -74,7 +74,7 @@ class Accueil(models.Model):
     text_question = models.CharField(max_length=200)#titre pour question
     sous_text_question = models.CharField(max_length=200)#text d'accroche
     
-    text_temstimonail = models.CharField(max_length=200)#titre pour question
+    text_temstimonail = models.CharField(max_length=200)#titre pour temoignage
     sous_text_testimonail = models.CharField(max_length=200)#text d'accroche
 
 
@@ -94,46 +94,46 @@ class Carasteristique1(models.Model):
 
 class Carasteristique2(models.Model):
     title1 = models.CharField(max_length=200)
-    sout_text1 = models.TextField(max_length=200)
+    sout_text1 = models.TextField(max_length=500)
     sous_titre1_1  = models.CharField(max_length=200)
-    sous_text1_1 = models.TextField(max_length=200)
+    sous_text1_1 = models.TextField(max_length=500)
     sous_titre1_2 = models.CharField(max_length=200)
-    sous_text1_2 = models.TextField(max_length=200)
+    sous_text1_2 = models.TextField(max_length=500)
     sous_titre1_3 = models.CharField(max_length=200)
-    sous_text1_3 = models.TextField(max_length=200)
+    sous_text1_3 = models.TextField(max_length=500)
 
     title2 = models.CharField(max_length=200)
-    sout_text2 = models.TextField(max_length=200)
+    sout_text2 = models.TextField(max_length=500)
     sous_titre2_1 = models.CharField(max_length=200)
-    sous_text2_1 = models.TextField(max_length=200)
+    sous_text2_1 = models.TextField(max_length=500)
     sous_titre2_2 = models.CharField(max_length=200)
-    sous_text2_2 = models.TextField(max_length=200)
+    sous_text2_2 = models.TextField(max_length=500)
     sous_titre2_3 = models.CharField(max_length=200)
-    sous_text2_3 = models.TextField(max_length=200)
+    sous_text2_3 = models.TextField(max_length=500)
 
     title3 = models.CharField(max_length=200)
-    sout_text3 = models.TextField(max_length=200)
+    sout_text3 = models.TextField(max_length=500)
     sous_titre3_1 = models.CharField(max_length=200)
-    sous_text3_1 = models.TextField(max_length=200)
+    sous_text3_1 = models.TextField(max_length=500)
     sous_titre3_2 = models.CharField(max_length=200)
-    sous_text3_2 = models.TextField(max_length=200)
+    sous_text3_2 = models.TextField(max_length=500)
     sous_titre3_3 = models.CharField(max_length=200)
-    sous_text3_3 = models.TextField(max_length=200)
+    sous_text3_3 = models.TextField(max_length=500)
 
 class Carasteristique3(models.Model):
     icon = models.CharField(max_length=200)
     titre = models.CharField(max_length=200)
-    text = models.TextField(max_length=200)
+    text = models.TextField(max_length=500)
 
 class Question(models.Model):
     titre = models.CharField(max_length=200)
-    text = models.TextField(max_length=200)
-    js2 = models.TextField(max_length=200)
+    text = models.TextField(max_length=500)
+    js2 = models.TextField(max_length=500)
 
 class Temoin(models.Model):
     person_name = models.CharField(max_length=200)
     person_poste = models.CharField(max_length=200)
-    text = models.TextField(max_length=200)
+    text = models.TextField(max_length=500)
 
 
 # Pour l'onglet a propos
